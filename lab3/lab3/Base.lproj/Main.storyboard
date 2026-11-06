@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EoV-zF-xJp">
+                                <rect key="frame" x="5" y="64" width="420" height="829"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD5-Bv-4sy" userLabel="ManeyCounter">
+                                        <rect key="frame" x="0.0" y="0.0" width="420" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="RZM-YS-56v"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="999">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99382219410905936" green="0.62697459533843747" blue="0.051981317450733429" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="31" name="TimesNewRomanPS-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" red="0.99931273797545772" green="0.69893171028563061" blue="0.075961863627017567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinSprite" translatesAutoresizingMaskIntoConstraints="NO" id="Y28-NJ-bTI">
+                                        <rect key="frame" x="0.0" y="43" width="420" height="200"/>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="qfh-gt-J4p"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykl-6k-SU7">
+                                        <rect key="frame" x="0.0" y="251" width="420" height="520"/>
+                                        <color key="backgroundColor" red="0.1077947401221287" green="0.043966093496011112" blue="0.21131396052813289" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.20307751956178671" green="0.14972263440452119" blue="0.59123122090041036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="uNW-nQ-Lgq">
+                                        <rect key="frame" x="0.0" y="779" width="420" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m38-sM-xqr" userLabel="UpgradeButton1">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="click"/>
+                                                <connections>
+                                                    <action selector="clickButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPO-GN-poh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iI1-0U-c4B" userLabel="UpgradeButton2">
+                                                <rect key="frame" x="148.33333333333334" y="0.0" width="123.33333333333334" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="passive"/>
+                                                <connections>
+                                                    <action selector="passiveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6D-Re-iw2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfO-ZI-CeG" userLabel="UpgradeButton3">
+                                                <rect key="frame" x="296.66666666666669" y="0.0" width="123.33333333333331" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="bonus"/>
+                                                <connections>
+                                                    <action selector="bonusButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TTx-UJ-aTP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Tlm-a8-Tcs"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uNW-nQ-Lgq" firstAttribute="centerX" secondItem="EoV-zF-xJp" secondAttribute="centerX" id="xla-3e-PJa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.069132687290001327" green="0.050969344548123303" blue="0.20126995444297791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EoV-zF-xJp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="4A1-QC-F3n"/>
+                            <constraint firstItem="EoV-zF-xJp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Tfm-AO-84R"/>
+                            <constraint firstItem="EoV-zF-xJp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ne3-pR-hhm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EoV-zF-xJp" secondAttribute="bottom" constant="5" id="v73-4a-nBI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bonusButton" destination="sfO-ZI-CeG" id="VH7-GV-5Ky"/>
+                        <outlet property="clickButton" destination="m38-sM-xqr" id="Xn3-Au-SxK"/>
+                        <outlet property="coinImage" destination="Y28-NJ-bTI" id="qwO-pz-jpH"/>
+                        <outlet property="coinsLabel" destination="JD5-Bv-4sy" id="vYv-FE-fbq"/>
+                        <outlet property="passiveButton" destination="iI1-0U-c4B" id="nQ6-2n-r8v"/>
+                        <outlet property="stackView" destination="EoV-zF-xJp" id="fbD-nm-Qqq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.492753623188406" y="-34.821428571428569"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.44229041713949829" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="coinSprite" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>
